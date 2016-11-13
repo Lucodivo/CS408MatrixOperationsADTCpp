@@ -28,19 +28,19 @@ int main() {
     // while the user enters a given command, continue the program
     while (choice > '0' && choice < '4') {
         if (choice == '1') {
-            Matrix m3 = m1.addMat(m2);
+            Matrix m3 = m1 + m2;
 
             std::cout << "(1) M4 = M1 + M2 \n";
             printResults(m1, m2, m3);
         }
         else if (choice == '2') {
-            Matrix m3 = m1.subMat(m2);
+            Matrix m3 = m1 - m2;
 
             std::cout << "(2) M4 = M1 - M2 \n";
             printResults(m1, m2, m3);
         }
         else if (choice == '3') {
-            Matrix m3 = m1.multMat(m2);
+            Matrix m3 = m1 * m2;
 
             std::cout << "(3) M5 = M1 * M2 \n";
             printResults(m1, m2, m3);

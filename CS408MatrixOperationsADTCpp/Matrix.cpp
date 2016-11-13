@@ -49,7 +49,7 @@ Matrix::~Matrix(){
  * @param   m   addend Matrix
  * @return  summation Matrix
  */
-Matrix Matrix::addMat(Matrix m) {
+Matrix Matrix::operator+(Matrix m) {
     double * newMat = new double[this->size];
     for (int i = 0; i < this->numRows; i++) {
         for (int j = 0; j < this->numCols; j++) {
@@ -66,7 +66,7 @@ Matrix Matrix::addMat(Matrix m) {
  * @return  difference Matrix
  */
 
-Matrix Matrix::subMat(Matrix m) {
+Matrix Matrix::operator-(Matrix m) {
     double * newMat = new double[this->size];
     for (int i = 0; i < this->numRows; i++) {
         for (int j = 0; j < this->numCols; j++) {
@@ -84,7 +84,7 @@ Matrix Matrix::subMat(Matrix m) {
  * @return  product Matrix
  */
 
-Matrix Matrix::multMat(Matrix m) {
+Matrix Matrix::operator*(Matrix m) {
     double * newMat = new double[this->numRows * m.numCols];
     for (int i = 0; i < this->numRows; i++) {
         for (int j = 0; j < m.numCols; j++) {

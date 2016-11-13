@@ -16,9 +16,9 @@ public:
     ~Matrix();
 
     // matrix operation functions
-    Matrix addMat(Matrix m);
-    Matrix subMat(Matrix m);
-    Matrix multMat(Matrix m);
+    Matrix operator+(Matrix m);
+    Matrix operator-(Matrix m);
+    Matrix operator*(Matrix m);
 
     void printMat();
 };
