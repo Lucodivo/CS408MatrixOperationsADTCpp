@@ -1,0 +1,10 @@
+.vs/
+CS408MatrixOperationsADTCpp.VC.db
+CS408MatrixOperationsADTCpp.sln
+CS408MatrixOperationsADTCpp.VC.VC.opendb
+CS408MatrixOperationsADTCpp/CS408MatrixOperationsADTCpp.vcxproj
+CS408MatrixOperationsADTCpp/CS408MatrixOperationsADTCpp.vcxproj.filters
+CS408MatrixOperationsADTCpp/Debug/
+Debug/
+doxygen.config
+doxygen/
